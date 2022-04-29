@@ -1,0 +1,10 @@
+
+public class Movil {
+
+	Colgante colgante_a;
+	Colgante colgante_b;
+	
+	Movil(Colgante colgante_1, Colgante colgante_2){
+		this.colgante_a = 
+	}
+}

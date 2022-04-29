@@ -1,0 +1,21 @@
+
+public class PonyExpress {
+
+	public static int jinetes(int[]estaciones) {
+		
+		int millasRecorridas = 0;
+		int cantidadJinetes = 1;
+		
+		for(int i = 0; i < estaciones.length - 1; i++) {
+			
+			millasRecorridas += estaciones[i];
+			
+			if(millasRecorridas + estaciones[i+1] > 100) {
+				cantidadJinetes++;
+				millasRecorridas = 0;
+			}
+		}
+		return cantidadJinetes;
+		
+	}
+}

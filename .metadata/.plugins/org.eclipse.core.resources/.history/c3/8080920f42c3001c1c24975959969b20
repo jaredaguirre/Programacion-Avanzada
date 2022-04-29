@@ -1,0 +1,17 @@
+
+public class Circulo {
+
+	private double radio;
+	private Punto puntoCentral;
+	
+	public Circulo(Punto punto, double _radio) {
+		
+		this.radio = _radio;
+		this.puntoCentral = punto;
+		
+	}
+	
+	public String toString() {
+		return "origen: " + puntoCentral + "r:" + radio;
+	}
+}

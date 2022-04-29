@@ -1,0 +1,13 @@
+
+public class Punto {
+
+	public double x;
+	public double y;
+	
+	public Punto(double _x, double _y) {
+		
+		this.x = _x;
+		this.y = _y;
+		
+	}
+}

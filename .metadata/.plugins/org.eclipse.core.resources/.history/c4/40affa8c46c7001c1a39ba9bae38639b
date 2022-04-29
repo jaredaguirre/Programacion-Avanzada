@@ -1,0 +1,17 @@
+
+public class Movil {
+
+	Colgante colgante_a;
+	Colgante colgante_b;
+	
+	Movil(Colgante colgante_1, Colgante colgante_2){
+		
+		if(colgante_1.pesaIgualA(colgante_2)) {
+			this.colgante_a = colgante_1;
+			this.colgante_b = colgante_2;
+		}
+		
+		
+		
+	}
+}

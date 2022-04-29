@@ -1,0 +1,13 @@
+
+public class Ejercicio00 {
+
+	
+	
+	public void checkDiag(int[][] matA) {
+		//Given a nxn matrix, let:
+		int n = matA.length;
+	}
+	
+	
+}
+

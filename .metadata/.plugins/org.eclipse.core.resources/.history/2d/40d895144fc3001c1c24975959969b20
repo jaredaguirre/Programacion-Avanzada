@@ -1,0 +1,67 @@
+import java.math.*;
+
+public class Circulo {
+
+	private double radio;
+	private Punto puntoCentral;
+	
+	public Circulo(Punto punto, double _radio) {
+		
+		this.radio = _radio;
+		this.puntoCentral = punto;
+		
+	}
+	
+	public String toString() {
+		return "origen: " + puntoCentral + " r: " + radio;
+	}
+	
+	public double getX() {
+		return this.puntoCentral.x;
+	}
+	
+	public double getY() {
+		return this.puntoCentral.y;
+	}
+	
+	public double getRadio() {
+		return this.radio;
+	}
+	
+	public double distanciaA(Circulo circulo_b) {
+		
+		return Math.sqrt(Math.pow((this.getX() - circulo_b.getX()),2) + 
+		 		   		 Math.pow((this.getY() - circulo_b.getY()),2));
+	}
+	
+	public double sumaRadios(Circulo circulo_b) {
+		
+		return this.radio + circulo_b.getRadio();
+	}
+	
+	public boolean intersectaCon(Circulo circulo_b) {
+		
+		double sumaRadios = return this.radio + circulo_b.getRadio();
+		
+		Circulo circuloMayor;
+		Circulo circuloMenor;
+		
+		//Clasificamos los circulos
+		if(this.getRadio() > circulo_b.getRadio()) {
+			circuloMayor = this;
+			circuloMenor = circulo_b;
+		}
+		else {
+			circuloMayor = circulo_b;
+			circuloMenor = this;
+		}
+		
+		if(circuloMayor.distanciaA(circuloMenor)<=sumaRadios) {
+			//Significa que intersecta o que esta contenido en el mayor
+			if(distanciaA())
+			
+		}
+			
+		return false;
+	}
+}

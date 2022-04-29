@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.io.File;
+
+public class GestorArchivo throws FileNotFoundException{
+	
+	public static void leerArchivo() {
+		
+		String rutaCompleta = "/Users/agujared/eclipse-workspace/Varillas/media";
+		
+		//creating File instance to reference text file in Java
+        File text = new File(rutaCompleta);
+        
+        //Creating Scanner instance to read File in Java
+        Scanner scnr = new Scanner(text);
+		
+	}
+}

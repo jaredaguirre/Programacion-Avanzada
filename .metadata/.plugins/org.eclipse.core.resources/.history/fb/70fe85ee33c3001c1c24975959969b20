@@ -1,0 +1,9 @@
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int res = PonyExpress.jinetes(new int[] {18, 15});
+		
+		System.out.println(res);
+	}
+}

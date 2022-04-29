@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class GestorArchivo {
+
+	public static void leerArchivoColgantes() throws FileNotFoundException {
+
+		String rutaCompleta = "/Users/agujared/eclipse-workspace/Varillas/media/text.txt";
+
+		// creating File instance to reference text file in Java
+		File text = new File(rutaCompleta);
+
+		// Creating Scanner instance to read File in Java
+		Scanner scanner = new Scanner(text);
+		
+		//Get the first line and store the amount of colgantes
+		String primerLinea = scanner.nextLine();
+		int cantColgantes = Integer.parseInt(primerLinea);
+
+		
+		System.out.println("Hay " + cantColgantes + " colgantes");
+		
+		// Reading each line of the file using Scanner class
+		for(int i = 0; i < cantColgantes ; i++) {
+			
+			String linea = scanner.nextLine();
+			double peso = Double.parseDouble(linea);
+		}
+		
+	}
+}

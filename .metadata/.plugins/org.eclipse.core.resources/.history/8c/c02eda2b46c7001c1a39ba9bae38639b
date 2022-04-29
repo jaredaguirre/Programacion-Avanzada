@@ -1,0 +1,11 @@
+
+public class Colgante {
+
+	
+	double peso;
+	
+	Colgante(double _peso){
+		
+		this.peso = _peso;
+	}
+}

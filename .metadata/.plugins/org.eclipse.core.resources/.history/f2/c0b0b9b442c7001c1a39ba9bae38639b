@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.io.File;
+
+public class GestorArchivo {
+	
+	public static void leerArchivo() {
+		
+		//creating File instance to reference text file in Java
+        File text = new File("/Users/agujared/eclipse-workspace/Varillas/media");
+		
+	}
+}

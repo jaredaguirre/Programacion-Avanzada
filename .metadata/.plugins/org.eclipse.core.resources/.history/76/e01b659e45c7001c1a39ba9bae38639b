@@ -1,0 +1,6 @@
+
+public class Movil {
+
+	Colgante colgante_a;
+	Colgante colgante_b;
+}

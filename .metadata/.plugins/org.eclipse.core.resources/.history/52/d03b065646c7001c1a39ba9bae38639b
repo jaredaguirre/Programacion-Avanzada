@@ -1,0 +1,16 @@
+
+public class Colgante {
+
+	
+	double peso;
+	
+	Colgante(double _peso){
+		
+		this.peso = _peso;
+	}
+	
+	public boolean pesanIgual(Colgante c1, Colgante c2) {
+		
+		return c1 == c2 ? true : false;
+	}
+}
